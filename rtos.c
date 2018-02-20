@@ -252,7 +252,6 @@ void SysTick_Handler(void) //Donde se incrementa????
 	task_list.global_tick++;
 	activate_waiting_tasks();
 	dispatcher(kFromISR);
-//	activate_waiting_tasks();
 	reload_systick();
 }
 
